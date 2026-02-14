@@ -1,0 +1,5 @@
+<div class="bg-white rounded-lg p-6 flex items-center justify-center h-24 hover:shadow-md transition-shadow">
+    {{ with .Get "image" }}
+    <img src="{{ . }}" alt="{{ $.Get "name" }}" class="max-h-12 max-w-full object-contain">
+    {{ end }}
+</div>
