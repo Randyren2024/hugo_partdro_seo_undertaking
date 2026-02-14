@@ -2,8 +2,8 @@ baseURL = "https://saasify-demo.chaoming.li/"
 title = "Saasify"
 defaultContentLanguage = "en"
 
-# Theme Config - 使用本地layouts，不需要外部主题
-# theme = "hugo-saasify-theme"
+# Theme Config
+theme = "../.."
 
 # Enable emoji support
 enableEmoji = true

@@ -1,0 +1,111 @@
+backend:
+  name: git-gateway
+  branch: main
+  commit_messages:
+    create: "Create {{collection}} \"{{slug}}\""
+    update: "Update {{collection}} \"{{slug}}\""
+    delete: "Delete {{collection}} \"{{slug}}\""
+    uploadMedia: "Upload \"{{path}}\""
+    deleteMedia: "Delete \"{{path}}\""
+
+# 本地开发时使用本地后端
+local_backend: true
+
+media_folder: "static/images/uploads"
+public_folder: "/images/uploads"
+
+# 站点 URL（部署后需要更新）
+site_url: https://your-site.netlify.app
+
+# 定义内容集合
+collections:
+  # 博客文章
+  - name: "blog"
+    label: "博客文章"
+    folder: "content/blog"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "blog/{{slug}}"
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "发布日期", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "HH:mm" }
+      - { label: "最后修改日期", name: "lastmod", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "HH:mm", required: false }
+      - { label: "草稿", name: "draft", widget: "boolean", default: false }
+      - { label: "作者", name: "author", widget: "string", required: false }
+      - { label: "描述", name: "description", widget: "text", required: false }
+      - { label: "特色图片", name: "image", widget: "image", required: false }
+      - { label: "分类", name: "categories", widget: "list", required: false }
+      - { label: "标签", name: "tags", widget: "list", required: false }
+      - { label: "正文", name: "body", widget: "markdown" }
+
+  # 功能页面
+  - name: "features"
+    label: "功能页面"
+    folder: "content/features"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "features/{{slug}}"
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "发布日期", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "HH:mm" }
+      - { label: "草稿", name: "draft", widget: "boolean", default: false }
+      - { label: "描述", name: "description", widget: "text", required: false }
+      - { label: "特色图片", name: "image", widget: "image", required: false }
+      - { label: "正文", name: "body", widget: "markdown" }
+
+  # 职位页面
+  - name: "jobs"
+    label: "招聘职位"
+    folder: "content/jobs"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "jobs/{{slug}}"
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "发布日期", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "HH:mm" }
+      - { label: "草稿", name: "draft", widget: "boolean", default: false }
+      - { label: "部门", name: "department", widget: "string", required: false }
+      - { label: "地点", name: "location", widget: "string", required: false }
+      - { label: "类型", name: "type", widget: "select", options: ["全职", "兼职", "合同", "实习"], default: "全职" }
+      - { label: "描述", name: "description", widget: "text", required: false }
+      - { label: "正文", name: "body", widget: "markdown" }
+
+  # 普通页面
+  - name: "pages"
+    label: "普通页面"
+    folder: "content"
+    create: true
+    slug: "{{slug}}"
+    filter: { field: "type", value: "page" }
+    fields:
+      - { label: "标题", name: "title", widget: "string" }
+      - { label: "类型", name: "type", widget: "hidden", default: "page" }
+      - { label: "布局", name: "layout", widget: "select", options: ["simple", "feature", "company", "pricing", "career"], default: "simple" }
+      - { label: "发布日期", name: "date", widget: "datetime", date_format: "YYYY-MM-DD", time_format: "HH:mm" }
+      - { label: "草稿", name: "draft", widget: "boolean", default: false }
+      - { label: "描述", name: "description", widget: "text", required: false }
+      - { label: "正文", name: "body", widget: "markdown" }
+
+  # 首页配置
+  - name: "homepage"
+    label: "首页"
+    files:
+      - file: "content/_index.md"
+        label: "首页内容"
+        name: "index"
+        fields:
+          - { label: "标题", name: "title", widget: "string" }
+          - { label: "草稿", name: "draft", widget: "boolean", default: false }
+          - { label: "正文", name: "body", widget: "markdown" }
+
+  # 站点配置
+  - name: "settings"
+    label: "站点设置"
+    files:
+      - file: "hugo.toml"
+        label: "Hugo 配置"
+        name: "hugo-config"
+        fields:
+          - { label: "站点标题", name: "title", widget: "string" }
+          - { label: "基础 URL", name: "baseURL", widget: "string" }
+          - { label: "默认语言", name: "defaultContentLanguage", widget: "string", default: "en" }

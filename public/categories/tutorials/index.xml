@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tutorials on Saasify</title><link>https://saasify-demo.chaoming.li/categories/tutorials/</link><description>Recent content in Tutorials on Saasify</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 29 Nov 2024 16:53:04 +1100</lastBuildDate><atom:link href="https://saasify-demo.chaoming.li/categories/tutorials/index.xml" rel="self" type="application/rss+xml"/><item><title>Getting Started with Hugo: A Beginner's Guide</title><link>https://saasify-demo.chaoming.li/blog/getting-started-with-hugo/</link><pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate><guid>https://saasify-demo.chaoming.li/blog/getting-started-with-hugo/</guid><description>&lt;div class="bg-gray-50 p-6 rounded-lg mb-8">
+ &lt;h2 class="text-xl font-semibold mb-4">Table of Contents&lt;/h2>
+ &lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#why-choose-hugo">Why Choose Hugo?&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#setting-up-your-first-hugo-site">Setting Up Your First Hugo Site&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#working-with-content">Working with Content&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#advanced-features">Advanced Features&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#code-examples">Code Examples&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#conclusion">Conclusion&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#next-steps">Next Steps&lt;/a>&lt;/li>
+ &lt;/ul>
+&lt;/nav>
+&lt;/div>
+
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again.&lt;/p>
+&lt;h2 id="why-choose-hugo">Why Choose Hugo?&lt;/h2>
+&lt;p>Here are some compelling reasons to choose Hugo for your next project:&lt;/p>
+&lt;ol>
+&lt;li>Lightning Fast&lt;/li>
+&lt;li>Easy to Learn&lt;/li>
+&lt;li>Highly Flexible&lt;/li>
+&lt;li>Great Community&lt;/li>
+&lt;/ol>
+&lt;h2 id="setting-up-your-first-hugo-site">Setting Up Your First Hugo Site&lt;/h2>
+&lt;p>Let&amp;rsquo;s walk through creating your first Hugo site:&lt;/p></description></item></channel></rss>

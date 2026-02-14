@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Organization on Saasify</title><link>https://saasify-demo.chaoming.li/tags/organization/</link><description>Recent content in Organization on Saasify</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 29 Nov 2024 16:53:04 +1100</lastBuildDate><atom:link href="https://saasify-demo.chaoming.li/tags/organization/index.xml" rel="self" type="application/rss+xml"/><item><title>Content Management in Hugo: Best Practices</title><link>https://saasify-demo.chaoming.li/blog/content-management-hugo/</link><pubDate>Mon, 24 Jul 2023 00:00:00 +0000</pubDate><guid>https://saasify-demo.chaoming.li/blog/content-management-hugo/</guid><description>&lt;div class="bg-gray-50 p-6 rounded-lg mb-8">
+ &lt;h2 class="text-xl font-semibold mb-4">Table of Contents&lt;/h2>
+ &lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#content-organization">Content Organization&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#directory-structure">Directory Structure&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#front-matter-templates">Front Matter Templates&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#content-types">Content Types&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#page-bundles">Page Bundles&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#taxonomies">Taxonomies&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#content-workflow">Content Workflow&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#draft-management">Draft Management&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#content-updates">Content Updates&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#dynamic-content">Dynamic Content&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#related-content">Related Content&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#content-reuse">Content Reuse&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#seo-and-metadata">SEO and Metadata&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#content-backup">Content Backup&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#backup-strategies">Backup Strategies&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#conclusion">Conclusion&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#resources">Resources&lt;/a>&lt;/li>
+ &lt;/ul>
+&lt;/nav>
+&lt;/div>
+
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Effective content management is crucial for maintaining a scalable Hugo site. This guide covers best practices for organizing and managing your content.&lt;/p>
+&lt;h2 id="content-organization">Content Organization&lt;/h2>
+&lt;h3 id="directory-structure">Directory Structure&lt;/h3>
+&lt;p>Create a logical content hierarchy:&lt;/p></description></item></channel></rss>

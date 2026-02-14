@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Performance on Saasify</title><link>https://saasify-demo.chaoming.li/categories/performance/</link><description>Recent content in Performance on Saasify</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 29 Nov 2024 16:53:04 +1100</lastBuildDate><atom:link href="https://saasify-demo.chaoming.li/categories/performance/index.xml" rel="self" type="application/rss+xml"/><item><title>Optimizing Hugo Performance: Speed Up Your Site</title><link>https://saasify-demo.chaoming.li/blog/optimizing-hugo-performance/</link><pubDate>Sun, 23 Jul 2023 00:00:00 +0000</pubDate><guid>https://saasify-demo.chaoming.li/blog/optimizing-hugo-performance/</guid><description>&lt;div class="bg-gray-50 p-6 rounded-lg mb-8">
+ &lt;h2 class="text-xl font-semibold mb-4">Table of Contents&lt;/h2>
+ &lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#asset-optimization">Asset Optimization&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#image-optimization">Image Optimization&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#css-and-javascript">CSS and JavaScript&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#caching-strategies">Caching Strategies&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#content-delivery">Content Delivery&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#cdn-setup">CDN Setup&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#edge-computing">Edge Computing&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#performance-monitoring">Performance Monitoring&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#key-metrics">Key Metrics&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#advanced-optimization-techniques">Advanced Optimization Techniques&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#resource-hints">Resource Hints&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#critical-css">Critical CSS&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#seo-optimization">SEO Optimization&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#conclusion">Conclusion&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#resources">Resources&lt;/a>&lt;/li>
+ &lt;/ul>
+&lt;/nav>
+&lt;/div>
+
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Performance is crucial for user experience and SEO. In this guide, we&amp;rsquo;ll explore various techniques to optimize your Hugo site for maximum performance.&lt;/p>
+&lt;h2 id="asset-optimization">Asset Optimization&lt;/h2>
+&lt;h3 id="image-optimization">Image Optimization&lt;/h3>
+&lt;p>Images often contribute the most to page weight. Here&amp;rsquo;s how to optimize them:&lt;/p></description></item></channel></rss>

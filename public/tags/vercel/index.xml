@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vercel on Saasify</title><link>https://saasify-demo.chaoming.li/tags/vercel/</link><description>Recent content in Vercel on Saasify</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 29 Nov 2024 16:53:04 +1100</lastBuildDate><atom:link href="https://saasify-demo.chaoming.li/tags/vercel/index.xml" rel="self" type="application/rss+xml"/><item><title>Deploying Hugo Sites: A Complete Guide</title><link>https://saasify-demo.chaoming.li/blog/deploying-hugo-sites/</link><pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate><guid>https://saasify-demo.chaoming.li/blog/deploying-hugo-sites/</guid><description>&lt;div class="bg-gray-50 p-6 rounded-lg mb-8">
+ &lt;h2 class="text-xl font-semibold mb-4">Table of Contents&lt;/h2>
+ &lt;nav id="TableOfContents">
+ &lt;ul>
+ &lt;li>&lt;a href="#introduction">Introduction&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#popular-deployment-platforms">Popular Deployment Platforms&lt;/a>
+ &lt;ul>
+ &lt;li>&lt;a href="#1-netlify">1. Netlify&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#2-vercel">2. Vercel&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#3-github-pages">3. GitHub Pages&lt;/a>&lt;/li>
+ &lt;/ul>
+ &lt;/li>
+ &lt;li>&lt;a href="#deployment-best-practices">Deployment Best Practices&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#performance-considerations">Performance Considerations&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#security-measures">Security Measures&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#conclusion">Conclusion&lt;/a>&lt;/li>
+ &lt;li>&lt;a href="#resources">Resources&lt;/a>&lt;/li>
+ &lt;/ul>
+&lt;/nav>
+&lt;/div>
+
+&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>Once you&amp;rsquo;ve built your Hugo site, the next step is deploying it to make it accessible to the world. This guide covers various deployment options and best practices.&lt;/p>
+&lt;h2 id="popular-deployment-platforms">Popular Deployment Platforms&lt;/h2>
+&lt;h3 id="1-netlify">1. Netlify&lt;/h3>
+&lt;p>Netlify offers a seamless deployment experience:&lt;/p>
+
+
+
+
+&lt;div class="not-prose my-8 overflow-hidden rounded-lg bg-gray-900 shadow-lg">
+ 
+ &lt;div class="flex items-center justify-between px-4 py-2 bg-gray-800 border-b border-gray-700">
+ &lt;div class="text-sm text-gray-200 font-mono">terminal&lt;/div>
+ &lt;div class="flex space-x-2">
+ &lt;div class="w-3 h-3 rounded-full bg-red-500">&lt;/div>
+ &lt;div class="w-3 h-3 rounded-full bg-yellow-500">&lt;/div>
+ &lt;div class="w-3 h-3 rounded-full bg-green-500">&lt;/div>
+ &lt;/div>
+ &lt;/div>
+ 
+ &lt;div class="p-4 overflow-x-auto">
+ &lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Create netlify.toml&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">[&lt;/span>build&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">publish&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;public&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nb">command&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;hugo --gc --minify&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">[&lt;/span>build.environment&lt;span class="o">]&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nv">HUGO_VERSION&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s2">&amp;#34;0.95.0&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>
+ &lt;/div>
+&lt;/div>
+
+&lt;h3 id="2-vercel">2. Vercel&lt;/h3>
+&lt;p>Vercel provides excellent performance and analytics.&lt;/p></description></item></channel></rss>

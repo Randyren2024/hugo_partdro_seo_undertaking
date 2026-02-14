@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>内容管理 - Decap CMS</title>
+  <link rel="stylesheet" href="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.css" />
+  <style>
+    /* 自定义样式 */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    
+    /* 登录页面样式 */
+    [class*="AuthenticationPage"] {
+      background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%) !important;
+    }
+    
+    [class*="AuthenticationPage"] h1 {
+      color: white !important;
+    }
+    
+    [class*="AuthenticationPage"] [class*="button"] {
+      background: white !important;
+      color: #2563eb !important;
+      border-radius: 8px !important;
+      font-weight: 600 !important;
+    }
+  </style>
+</head>
+<body>
+  <!-- Decap CMS 脚本 -->
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  
+  <script>
+    // CMS 初始化配置
+    CMS.init();
+    
+    // 自定义预览样式（可选）
+    CMS.registerPreviewStyle("/css/style.css");
+  </script>
+</body>
+</html>
