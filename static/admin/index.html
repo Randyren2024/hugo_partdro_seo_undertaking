@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>内容管理 - Decap CMS</title>
+  <link rel="stylesheet" href="https://unpkg.com/decap-cms@3.0.12/dist/decap-cms.css" />
+  <style>
+    /* 自定义样式 */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* 登录页面样式 */
+    [class*="AuthenticationPage"] {
+      background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%) !important;
+    }
+    
+    [class*="AuthenticationPage"] h1 {
+      color: white !important;
+    }
+    
+    [class*="AuthenticationPage"] [class*="button"] {
+      background: white !important;
+      color: #2563eb !important;
+      border-radius: 8px !important;
+      font-weight: 600 !important;
+    }
+    
+    /* 加载动画 */
+    .cms-loading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+      color: white;
+    }
+    
+    .cms-loading-spinner {
+      width: 50px;
+      height: 50px;
+      border: 3px solid rgba(255,255,255,0.3);
+      border-radius: 50%;
+      border-top-color: white;
+      animation: spin 1s ease-in-out infinite;
+      margin-bottom: 20px;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    /* 错误提示样式 */
+    .cms-error {
+      padding: 40px;
+      text-align: center;
+      background: #f8f9fa;
+      min-height: 100vh;
+    }
+    
+    .cms-error h2 {
+      color: #dc3545;
+      margin-bottom: 16px;
+    }
+    
+    .cms-error p {
+      color: #6c757d;
+      margin-bottom: 8px;
+    }
+    
+    .cms-error .hint {
+      background: #e9ecef;
+      padding: 16px;
+      border-radius: 8px;
+      margin-top: 20px;
+      text-align: left;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .cms-error code {
+      background: #dee2e6;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <!-- 加载动画 -->
+  <div id="cms-loading" class="cms-loading">
+    <div class="cms-loading-spinner"></div>
+    <div>正在加载内容管理系统...</div>
+  </div>
+
+  <!-- 错误提示容器 -->
+  <div id="cms-error" class="cms-error" style="display: none;">
+    <h2>⚠️ CMS 加载遇到问题</h2>
+    <p>这是本地开发环境的正常现象，生产环境部署后将正常工作。</p>
+    <div class="hint">
+      <strong>解决方案：</strong>
+      <ol>
+        <li>确保已启动本地后端：<code>npx decap-server</code></li>
+        <li>或者直接在 Netlify 部署后使用生产环境</li>
+        <li>刷新页面重试</li>
+      </ol>
+      <p style="margin-top: 16px;">
+        <a href="/" style="color: #2563eb; text-decoration: none;">← 返回网站首页</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Decap CMS 脚本 -->
+  <script src="https://unpkg.com/decap-cms@3.0.12/dist/decap-cms.js"></script>
+  
+  <script>
+    // 错误处理超时
+    var errorTimeout = setTimeout(function() {
+      var loadingEl = document.getElementById('cms-loading');
+      var errorEl = document.getElementById('cms-error');
+      if (loadingEl && errorEl) {
+        loadingEl.style.display = 'none';
+        errorEl.style.display = 'block';
+      }
+    }, 10000); // 10秒后显示错误提示
+    
+    // 等待 DOM 完全加载
+    document.addEventListener('DOMContentLoaded', function() {
+      // 检查 CMS 是否已加载
+      if (typeof CMS !== 'undefined') {
+        try {
+          // 初始化 CMS
+          CMS.init();
+          
+          // 注册预览样式
+          CMS.registerPreviewStyle("/css/style.css");
+          
+          // 清除错误超时
+          clearTimeout(errorTimeout);
+          
+          // 隐藏加载动画
+          var loadingEl = document.getElementById('cms-loading');
+          if (loadingEl) {
+            loadingEl.style.display = 'none';
+          }
+          
+          console.log('Decap CMS 初始化成功');
+        } catch (error) {
+          console.error('Decap CMS 初始化失败:', error);
+          clearTimeout(errorTimeout);
+          
+          var loadingEl = document.getElementById('cms-loading');
+          var errorEl = document.getElementById('cms-error');
+          if (loadingEl) loadingEl.style.display = 'none';
+          if (errorEl) errorEl.style.display = 'block';
+        }
+      } else {
+        console.error('CMS 对象未找到');
+      }
+    });
+    
+    // 全局错误处理
+    window.onerror = function(msg, url, lineNo, columnNo, error) {
+      console.error('全局错误:', msg, url, lineNo, columnNo, error);
+      return false;
+    };
+  </script>
+</body>
+</html>
